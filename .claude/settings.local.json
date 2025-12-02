@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:\\Users\\Ahmed''s laptop\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -c \"import json; data = json.load(open(''01_data_exploration_and_feature_engineering.ipynb'', ''r'', encoding=''utf-8'')); print(f''Total cells: {len(data[\"\"cells\"\"])}''); [print(f''\\nCell {i} ({cell[\"\"cell_type\"\"]}): {cell[\"\"source\"\"][:200] if isinstance(cell[\"\"source\"\"], str) else \"\"\"\".join(cell[\"\"source\"\"])[:200]}...'') for i, cell in enumerate(data[''cells''])]\")",
+      "Bash(\"C:\\Users\\Ahmed''s laptop\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -c \"\nimport json\ndata = json.load(open(''01_data_exploration_and_feature_engineering.ipynb'', ''r'', encoding=''utf-8''))\n\n# Look at cells 6-12 which seem to be the EDA section\nfor i in [6, 7, 8, 9, 10, 11, 12, 14, 15]:\n    cell = data[''cells''][i]\n    print(f''\\n========== CELL {i} =========='')\n    source = ''''.join(cell[''source'']) if isinstance(cell[''source''], list) else cell[''source'']\n    print(source)\n\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
