@@ -47,11 +47,9 @@ venv.bak/
 *.code-workspace
 
 # Data files (large datasets)
-data/*.csv
 data/*.xlsx
 data/*.json
 data/*.parquet
-*.csv
 *.xlsx
 !data/README.md
 
