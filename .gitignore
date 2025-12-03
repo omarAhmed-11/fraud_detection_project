@@ -47,6 +47,8 @@ venv.bak/
 *.code-workspace
 
 # Data files (large datasets)
+Train_Outpatientdata_CLEAN.csv
+Train_Outpatientdata-1542865627584.csv
 data/*.xlsx
 data/*.json
 data/*.parquet
